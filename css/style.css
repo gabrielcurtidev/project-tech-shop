@@ -6,19 +6,27 @@
 body{
     font-family: 'Heebo', sans-serif;
     margin: 0;
-    min-height: 3333px;
-}
-
-.container{
-    max-width: 1180px;
-
-    margin: auto;
-    padding: 0 20px;
+    padding: 80px;
 }
 
 ul{
     margin: 0;
     padding: 0;
+}
+
+.container{
+    max-width: 1320px;
+
+    margin: auto;
+    padding: 0 20px;
+}
+
+header .logo .dot{
+    display: inline-block;
+    background-color: red;
+    height: 20px;
+    width: 10px;
+    vertical-align: middle;
 }
 
 header{
@@ -40,6 +48,7 @@ header .container{
 
 header .logo{
     display: inline-block;
+    font-size: 20px;
 }
 
 header nav{
@@ -60,4 +69,9 @@ header nav ul li a{
 
 header nav ul li:last-of-type{
     margin-right: 0;
+}
+
+section.hero img{
+    width: 100%;
+    height: auto;
 }
