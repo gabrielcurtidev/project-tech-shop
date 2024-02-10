@@ -103,7 +103,7 @@ section.hero img{
     height: 112px;
     margin-bottom: 16px;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 56px;
     letter-spacing: 0em;
     margin-top: 0px;
@@ -131,4 +131,38 @@ section.hero img{
     padding: 10px;
     border-radius: 25px;
     border: none;
+    margin-bottom: 14px;
+}
+
+.best-sellers > h2{
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.best-sellers > hr{
+    border: none;
+    border: 3px solid #67F11D;
+    width: 66px;
+
+}
+
+.best-sellers .all-products{
+
+}
+
+.best-sellers .all-products .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.best-sellers .all-products .container .product{
+     border: 1px solid #DDD;
+     border-radius: 8px;
+     width: 33%;
+     height: 561px;
+     text-align: center;
 }
