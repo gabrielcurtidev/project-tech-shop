@@ -25,17 +25,6 @@ a{
     padding: 0 20px;
 }
 
-#shopping-cart-text{
-    margin-right: 0;
-}
-
-#cart{
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    vertical-align: middle;
-}
-
 header .logo .dot{
     display: inline-block;
     background-color: red;
