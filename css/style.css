@@ -136,7 +136,7 @@ section.hero img{
     width: 200px;
     height: 50px;
     max-width: 100%;
-    font-weight: 700;
+    font-weight: bold;
     padding: 10px;
     border-radius: 25px;
     border: none;
@@ -168,13 +168,37 @@ section.hero img{
     justify-content: space-around;
 }
 
+.best-sellers .all-products .container .product.new::before{
+    position: absolute;
+    background-color: red;
+    color: white;
+    content: "New";
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 21px;
+    letter-spacing: 0.35px;
+    text-align: center;
+    padding: 2px 15px;
+    border-radius:  16px;
+}
+
 .best-sellers .all-products .container .product{
+    position: relative;
      border: 1px solid #DDD;
      border-radius: 8px;
      width: 33%; /*PAGINA TEM 100% DIVIVI EM 3 PRODUTOS NO CASO*/
      text-align: center;
      margin: 0 8px;
      padding: 40px 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.best-sellers .all-products .container .product img{
+    max-width: 100%;
 }
 
 .best-sellers .all-products .container .product .product-info{
@@ -206,11 +230,26 @@ section.hero img{
     color: #000000;
     font-family: Heebo;
     font-size: 28px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
     margin-top: 0;
+}
+
+.best-sellers .all-products .container .product .product-info .price .discounted-price{
+    color: red;
+}
+
+.best-sellers .all-products .container .product .product-info .price .original-price{
+    color: #9B9B9B;
+    font-weight: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: line-through;
 }
 
 .best-sellers .all-products .container .product .product-info button{
@@ -225,12 +264,3 @@ section.hero img{
     border-radius: 25px;
     border: 1px solid black;
 }
-
-.best-sellers .all-products .container .product .product-picture #headphone{
-    width: 157px;
-    height: 198px;
-    top: 57px;
-    left: 135px;
-    margin-bottom: 39px;
-}
-
