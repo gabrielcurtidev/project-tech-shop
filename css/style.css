@@ -412,6 +412,13 @@ footer .bottom-nav .container ul li a{
     letter-spacing: 0em;  
     margin-top: 0;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer .bottom-nav .container ul li a:hover{
+    color: red;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
 footer .copyright-text{
