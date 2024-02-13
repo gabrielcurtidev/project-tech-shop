@@ -9,6 +9,13 @@ body{
     padding: 70px 0 0 0;
 }
 
+.container{
+    max-width: 1440px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 20px;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -18,17 +25,10 @@ a{
     text-decoration: none;
 }
 
-.container{
-    max-width: 1440px;
-
-    margin: auto;
-    padding: 0 20px;
-}
-
 header .logo .dot{
     display: inline-block;
     background-color: red;
-    height: 20px;
+    height: 10px;
     width: 10px;
     vertical-align: middle;
 }
@@ -53,7 +53,7 @@ header .container{
 
 header .logo{
     display: inline-block;
-    font-size: 20px;
+    font-size: 27px;
 }
 
 header nav{
@@ -63,6 +63,17 @@ header nav{
 header nav ul li{
     display: inline-block;
 }
+
+header nav ul li.menu-icon{
+    display: none;
+}
+
+header nav ul li.menu-icon img{
+    vertical-align: middle;
+    width: 20px;
+    height: auto;
+}
+
 
 header nav ul li a{
     color: black;
@@ -429,3 +440,55 @@ footer .copyright-text{
     align-items: center;
     justify-content: center;
 }
+
+
+/* ***************************************
+********** CSS MEDIA QUERIES ************
+*************************************** */
+
+/* Start Design for desktop */
+@media screen and (max-width: 1440px){
+    .container{
+        width: 1180px;
+        max-width: 90%;
+    }
+    
+}
+/* End Design for desktop */
+
+/* Start Design for Tablet */
+@media screen and (max-width: 960px){
+    .container{
+        max-width: 92%;
+    }
+
+    header .logo{
+        display: inline-block;
+        font-size: 21px;
+    }
+
+    header nav ul li{
+        display: none;
+    }
+    
+    header nav ul li.menu-icon{
+        display: inline-block;
+    }
+}
+/* End Design for Tablet */
+
+/* Start Design for Mobile *//
+@media screen and (max-width: 576px){
+    .container{
+    }
+
+    header .logo .dot{
+        height: 7px;
+        width: 7px;
+    }
+
+    header .logo{
+        display: inline-block;
+        font-size: 18px;
+    }
+/* End Design for Mobile */
