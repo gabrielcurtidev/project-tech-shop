@@ -25,14 +25,6 @@ a{
     text-decoration: none;
 }
 
-header .logo .dot{
-    display: inline-block;
-    background-color: red;
-    height: 10px;
-    width: 10px;
-    vertical-align: middle;
-}
-
 header{
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
@@ -56,6 +48,14 @@ header .logo{
     font-size: 27px;
 }
 
+header .logo .dot{
+    display: inline-block;
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    vertical-align: middle;
+}
+
 header nav{
     display: inline-block;
 }
@@ -63,17 +63,6 @@ header nav{
 header nav ul li{
     display: inline-block;
 }
-
-header nav ul li.menu-icon{
-    display: none;
-}
-
-header nav ul li.menu-icon img{
-    vertical-align: middle;
-    width: 20px;
-    height: auto;
-}
-
 
 header nav ul li a{
     color: black;
